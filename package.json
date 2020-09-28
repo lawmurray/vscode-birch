@@ -1,7 +1,7 @@
 {
     "name": "birch",
-    "displayName": "Birch ",
-    "description": "Syntax highlighting for the Birch probabilistic programming language.",
+    "displayName": "Birch",
+    "description": "Syntax highlighting and code folding for the Birch probabilistic programming language.",
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.49.0"
