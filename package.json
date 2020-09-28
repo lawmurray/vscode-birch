@@ -1,0 +1,25 @@
+{
+    "name": "birch",
+    "displayName": "Birch ",
+    "description": "Syntax highlighting for the Birch probabilistic programming language.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "birch",
+            "aliases": ["Birch", "birch"],
+            "extensions": [".birch"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "birch",
+            "scopeName": "source.birch",
+            "path": "./syntaxes/birch.tmLanguage.json"
+        }]
+    }
+}

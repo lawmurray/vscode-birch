@@ -1,0 +1,142 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Birch",
+	"patterns": [
+		{
+			"include": "#line-comment"
+		},
+		{
+			"include": "#documentation-comment"
+		},
+		{
+			"include": "#block-comment"
+		},
+		{
+			"include": "#block-raw"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#modifiers"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"line-comment": {
+			"name": "comment.line.double-slash.birch",
+			"begin": "//",
+			"end": "\n"
+		},
+		"documentation-comment": {
+			"name": "comment.block.documentation.birch",
+			"begin": "/\\*\\*",
+			"end": "\\*/"
+		},
+		"block-comment": {
+			"name": "comment.block.birch",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		"block-raw": {
+			"name": "comment.block.birch",
+			"begin": "(cpp|hpp)\\s*{{",
+			"end": "}}"
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.birch",
+				"match": "\\b(function|program|class|type|operator|let|if|else|for|in|while|do|with|assert|return|factor)\\b"
+			}]
+		},
+		"modifiers": {
+			"patterns": [{
+				"name": "storage.modifier.birch",
+				"match": "\\b(parallel|dynamic|abstract|override|final)\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.birch",
+				"match": "<-|->|<~|~>|~|<-\\?|\\.\\.|\\?|!|&&|\\|\\||<|>|<=|>=|==|!=|\\+|-|\\*|/|=|\\."
+			}]
+		},
+		"punctuation": {
+			"patterns": [{
+				"name": "keyword.other.birch",
+				"match": "\\\\|,|;|:|\\(|\\)|\\[|\\]|\\{|\\}"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "storage.type.birch",
+				"match": "\\b([A-Z][A-Za-z0-9]+)\\b"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+				"name": "variable.language.birch",
+				"match": "\\b(global|super|this)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.birch",
+				"match": "\\b(nil|true|false|_)\\b"
+			}]
+		},
+    "numbers": {
+			"patterns": [{
+				"name": "constant.numeric.birch",
+				"match": "\\b[0-9]+[Ee][+-]?[0-9]+\\b"
+			},
+			{
+				"name": "constant.numeric.birch",
+				"match": "\\b[0-9]+\\.[0-9]+([Ee][+-]?[0-9]+)?\\b"
+			},
+			{
+				"name": "constant.numeric.birch",
+				"match": "\\b0[xX][a-fA-F0-9]+\\b"
+			},
+			{
+				"name": "constant.numeric.birch",
+				"match": "\\b0[0-9]+\\b"
+			},
+			{
+				"name": "constant.numeric.birch",
+				"match": "\\b[0-9]+\\b"
+			}]},
+		"strings": {
+			"name": "string.quoted.double.birch",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.birch",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.birch"
+}
