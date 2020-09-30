@@ -21,6 +21,12 @@
 			"include": "#modifiers"
 		},
 		{
+			"include": "#builtins"
+		},
+		{
+			"include": "#constants"
+		},
+		{
 			"include": "#operators"
 		},
 		{
@@ -30,10 +36,10 @@
 			"include": "#types"
 		},
 		{
-			"include": "#variables"
+			"include": "#functions"
 		},
 		{
-			"include": "#constants"
+			"include": "#variables"
 		},
 		{
 			"include": "#numbers"
@@ -75,6 +81,18 @@
 				"match": "\\b(parallel|dynamic|abstract|override|final)\\b"
 			}]
 		},
+		"builtins": {
+			"patterns": [{
+				"name": "variable.language.birch",
+				"match": "\\b(global|super|this)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.birch",
+				"match": "\\b(nil|true|false|_)\\b"
+			}]
+		},
 		"operators": {
 			"patterns": [{
 				"name": "keyword.operator.birch",
@@ -89,20 +107,23 @@
 		},
 		"types": {
 			"patterns": [{
-				"name": "storage.type.birch",
-				"match": "\\b([A-Z][A-Za-z0-9]+)\\b"
+				"name": "support.class.birch",
+				"match": "\\b([A-Z][A-Za-z0-9]+)\\b(?!\\()"
 			}]
 		},
 		"variables": {
 			"patterns": [{
-				"name": "variable.language.birch",
-				"match": "\\b(global|super|this)\\b"
+				"name": "variable.other.birch",
+				"match": "\\b[a-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ][A-Za-z0-9αβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ_]*'*\\b(?!\\()"
+			},{
+				"name": "variable.other.birch",
+				"match": "\\b[A-Za-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ]'*\\b(?!\\()"
 			}]
 		},
-		"constants": {
+		"functions": {
 			"patterns": [{
-				"name": "constant.language.birch",
-				"match": "\\b(nil|true|false|_)\\b"
+				"name": "support.function.birch",
+				"match": "\\b[A-Za-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ][A-Za-z0-9αβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ_]*'*\\b(?=\\()"
 			}]
 		},
     "numbers": {
