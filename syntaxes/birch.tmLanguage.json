@@ -108,7 +108,7 @@
 		"types": {
 			"patterns": [{
 				"name": "support.class.birch",
-				"match": "\\b([A-Z][a-z]+[A-Za-z0-9]+)\\b(?!\\()"
+				"match": "\\b([A-Z][A-Za-z]+[A-Za-z0-9]*)\\b(?!\\()"
 			}]
 		},
 		"variables": {
