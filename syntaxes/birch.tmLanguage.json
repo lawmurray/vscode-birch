@@ -107,8 +107,14 @@
 		},
 		"types": {
 			"patterns": [{
-				"name": "support.class.birch",
+				"name": "entity.name.class.birch",
 				"match": "\\b([A-Z][A-Za-z]+[A-Za-z0-9]*)\\b(?!\\()"
+			}]
+		},
+		"functions": {
+			"patterns": [{
+				"name": "entity.name.function.birch",
+				"match": "\\b[A-Za-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ][A-Za-z0-9αβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ_]*'*(?=\\()"
 			}]
 		},
 		"variables": {
@@ -118,12 +124,6 @@
 			},{
 				"name": "variable.other.birch",
 				"match": "\\b[A-Za-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ][0-9]*'*(?!\\()"
-			}]
-		},
-		"functions": {
-			"patterns": [{
-				"name": "support.function.birch",
-				"match": "\\b[A-Za-zαβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ][A-Za-z0-9αβγδεζηθικλμνξοπρστυφχψωΓΔΘΛΞΠΣΥΦΨΩ_]*'*(?=\\()"
 			}]
 		},
     "numbers": {
