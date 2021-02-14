@@ -78,7 +78,7 @@
 		"modifiers": {
 			"patterns": [{
 				"name": "storage.modifier.birch",
-				"match": "\\b(parallel|dynamic|abstract|override|final)\\b"
+				"match": "\\b(parallel|dynamic|abstract|override|final|acyclic)\\b"
 			}]
 		},
 		"builtins": {
