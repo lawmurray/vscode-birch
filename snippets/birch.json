@@ -70,7 +70,7 @@
     "function": {
         "prefix": "function ",
         "body": [
-            "function ${1:/* identifier */}(${2:/* parameters */}) ${3:-> /* return type */} {",
+            "function ${1:/* identifier */}(${2:/* parameters */}) ${3:-> /* type */} {",
             "\t${0://}",
             "}"
         ]
@@ -79,7 +79,7 @@
     "class ... < Model": {
         "prefix": "!model",
         "body": [
-            "class ${1:/* identifier */} < Model {",
+            "class ${1:$TM_FILENAME_BASE} < Model {",
             "\tfunction size() -> Integer {",
             "\t\treturn 0;",
             "\t}",

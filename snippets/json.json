@@ -4,7 +4,7 @@
         "body": [
             "{",
             "\t\"model\": {",
-            "\t\t\"class\": \"${1:ClassIdentifier}\"",
+            "\t\t\"class\": \"${1:identifier}\"",
             "\t},",
             "\t\"filter\": {",
             "\t\t\"nparticles\": ${3:1024}"
