@@ -88,7 +88,7 @@
             "\t\t${0://}",
             "\t}",
             "",
-            "\tfunction simulate(t:Integer) {
+            "\tfunction simulate(t:Integer) {",
             "\t\t//",
             "\t}",
             "}"
