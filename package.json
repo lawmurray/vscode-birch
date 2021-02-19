@@ -3,6 +3,7 @@
     "displayName": "Birch",
     "description": "Syntax highlighting and code folding for the Birch probabilistic programming language.",
     "version": "1.0.0",
+    "icon": "birch.svg",
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -20,6 +21,10 @@
             "language": "birch",
             "scopeName": "source.birch",
             "path": "./syntaxes/birch.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "birch",
+            "path": "./snippets/birch.json"
         }]
     }
 }
