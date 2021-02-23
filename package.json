@@ -26,8 +26,8 @@
             "language": "birch",
             "path": "./snippets/birch.json"
         }, {
-            "language": "json",
-            "path": "./snippets/json.json"
+            "language": "birch",
+            "path": "./snippets/greek.json"
         }]
     }
 }

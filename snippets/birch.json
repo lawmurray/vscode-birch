@@ -2,7 +2,7 @@
     "for": {
         "prefix": "for ",
         "body": [
-            "for ${1:/* identifier */} in ${2:1}..${3:/* upper limit */} {",
+            "for ${1:identifier} in ${2:1}..${3:last} {",
             "\t${0://}",
             "}"
         ]
@@ -11,7 +11,7 @@
     "while": {
         "prefix": "while ",
         "body": [
-            "while ${1:/* condition */} {",
+            "while ${1:condition} {",
             "\t${0://}",
             "}"
         ]
@@ -22,14 +22,14 @@
         "body": [
             "do {",
             "\t${0://}",
-            "} while ${1:/* condition */};"
+            "} while ${1:condition};"
         ]
     },
 
     "if": {
         "prefix": "if ",
         "body": [
-            "if ${1:/* condition */} {",
+            "if ${1:condition} {",
             "\t${0://}",
             "}"
         ],
@@ -47,7 +47,7 @@
     "else if": {
         "prefix": "else if ",
         "body": [
-            "else if ${1:/* condition */} {",
+            "else if ${1:condition} {",
             "\t${0://}",
             "}"
         ]
@@ -55,13 +55,13 @@
 
     "let": {
         "prefix": "let ",
-        "body": "let ${1:/* identifier */} <- ${2:/* expression */};"
+        "body": "let ${1:identifier} <- ${2:value};"
     },
 
     "class": {
         "prefix": "class ",
         "body": [
-            "class ${1:/* identifier */} {",
+            "class ${1:Identifier} {",
             "\t${0://}",
             "}"
         ]
@@ -70,14 +70,23 @@
     "function": {
         "prefix": "function ",
         "body": [
-            "function ${1:/* identifier */}(${2:/* parameters */}) ${3:-> /* type */} {",
+            "function ${1:identifier}(${2}) {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "function with a return type": {
+        "prefix": "function ",
+        "body": [
+            "function ${1:identifier}(${2}) -> ${3:Type} {",
             "\t${0://}",
             "}"
         ]
     },
 
     "class ... < Model": {
-        "prefix": "!model",
+        "prefix": "class ",
         "body": [
             "class ${1:$TM_FILENAME_BASE} < Model {",
             "\tfunction size() -> Integer {",
@@ -96,17 +105,17 @@
     },
 
     "stdout.print(\"...\")": {
-        "prefix": "!print",
-        "body": "stdout.print(\"$0\");"
+        "prefix": ["print", "stdout.print"],
+        "body": "stdout.print(\"$1\");"
     },
 
     "stderr.print(\"...\")": {
-        "prefix": "!printerr",
-        "body": "stderr.print(\"$0\");"
+        "prefix": ["print", "stderr.print"],
+        "body": "stderr.print(\"$1\");"
     },
 
     "function write(buffer:Buffer)": {
-        "prefix": "!write",
+        "prefix": ["write", "function write"],
         "body": [
             "function write(buffer:Buffer) {",
             "\t${0://}",
@@ -115,7 +124,7 @@
     },
 
     "function read(buffer:Buffer)": {
-        "prefix": "!read",
+        "prefix": ["read", "function read"],
         "body": [
             "function read(buffer:Buffer) {",
             "\t${0://}",
@@ -124,12 +133,12 @@
     },
 
     "buffer.set(...)": {
-        "prefix": "!set",
+        "prefix": ["set", "buffer.set"],
         "body": "buffer.set(\"${1:identifier}\", ${2:$1});"
     },
 
     "buffer.get(...)": {
-        "prefix": "!get",
+        "prefix": ["get", "buffer.get"],
         "body": "buffer.get(\"${1:identifier}\", ${2:$1});"
     }
 }
