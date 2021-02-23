@@ -69,11 +69,6 @@
         "body": "ξ"
     },
 
-    "ο": {
-        "prefix": "\\omicron",
-        "body": "ο"
-    },
-
     "π": {
         "prefix": "\\pi",
         "body": "π"
@@ -119,16 +114,6 @@
         "body": "ω"
     },
 
-    "Α": {
-        "prefix": "\\Alpha",
-        "body": "Α"
-    },
-
-    "Β": {
-        "prefix": "\\Beta",
-        "body": "Β"
-    },
-
     "Γ": {
         "prefix": "\\Gamma",
         "body": "Γ"
@@ -139,34 +124,9 @@
         "body": "Δ"
     },
 
-    "Ε": {
-        "prefix": "\\Epsilon",
-        "body": "Ε"
-    },
-
-    "Ζ": {
-        "prefix": "\\Zeta",
-        "body": "Ζ"
-    },
-
-    "Η": {
-        "prefix": "\\Eta",
-        "body": "Η"
-    },
-
     "Θ": {
         "prefix": "\\Theta",
         "body": "Θ"
-    },
-
-    "Ι": {
-        "prefix": "\\Iota",
-        "body": "Ι"
-    },
-
-    "Κ": {
-        "prefix": "\\Kappa",
-        "body": "Κ"
     },
 
     "Λ": {
@@ -174,24 +134,9 @@
         "body": "Λ"
     },
 
-    "Μ": {
-        "prefix": "\\Mu",
-        "body": "Μ"
-    },
-
-    "Ν": {
-        "prefix": "\\Nu",
-        "body": "Ν"
-    },
-
     "Ξ": {
         "prefix": "\\Xi",
         "body": "Ξ"
-    },
-
-    "Ο": {
-        "prefix": "\\Omicron",
-        "body": "Ο"
     },
 
     "Π": {
@@ -199,19 +144,9 @@
         "body": "Π"
     },
 
-    "Ρ": {
-        "prefix": "\\Rho",
-        "body": "Ρ"
-    },
-
     "Σ": {
         "prefix": "\\Sigma",
         "body": "Σ"
-    },
-
-    "Τ": {
-        "prefix": "\\Tau",
-        "body": "Τ"
     },
 
     "Υ": {
@@ -222,11 +157,6 @@
     "Φ": {
         "prefix": "\\Phi",
         "body": "Φ"
-    },
-
-    "Χ": {
-        "prefix": "\\Chi",
-        "body": "Χ"
     },
 
     "Ψ": {
