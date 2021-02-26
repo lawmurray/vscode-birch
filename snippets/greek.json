@@ -1,0 +1,171 @@
+{
+    "α": {
+        "prefix": "\\alpha",
+        "body": "α"
+    },
+
+    "β": {
+        "prefix": "\\beta",
+        "body": "β"
+    },
+
+    "γ": {
+        "prefix": "\\gamma",
+        "body": "γ"
+    },
+
+    "δ": {
+        "prefix": "\\delta",
+        "body": "δ"
+    },
+
+    "ε": {
+        "prefix": "\\epsilon",
+        "body": "ε"
+    },
+
+    "ζ": {
+        "prefix": "\\zeta",
+        "body": "ζ"
+    },
+
+    "η": {
+        "prefix": "\\eta",
+        "body": "η"
+    },
+
+    "θ": {
+        "prefix": "\\theta",
+        "body": "θ"
+    },
+
+    "ι": {
+        "prefix": "\\iota",
+        "body": "ι"
+    },
+
+    "κ": {
+        "prefix": "\\kappa",
+        "body": "κ"
+    },
+
+    "λ": {
+        "prefix": "\\lambda",
+        "body": "λ"
+    },
+
+    "μ": {
+        "prefix": "\\mu",
+        "body": "μ"
+    },
+
+    "ν": {
+        "prefix": "\\nu",
+        "body": "ν"
+    },
+
+    "ξ": {
+        "prefix": "\\xi",
+        "body": "ξ"
+    },
+
+    "π": {
+        "prefix": "\\pi",
+        "body": "π"
+    },
+
+    "ρ": {
+        "prefix": "\\rho",
+        "body": "ρ"
+    },
+
+    "σ": {
+        "prefix": "\\sigma",
+        "body": "σ"
+    },
+
+    "τ": {
+        "prefix": "\\tau",
+        "body": "τ"
+    },
+
+    "υ": {
+        "prefix": "\\upsilon",
+        "body": "υ"
+    },
+
+    "φ": {
+        "prefix": "\\phi",
+        "body": "φ"
+    },
+
+    "χ": {
+        "prefix": "\\chi",
+        "body": "χ"
+    },
+
+    "ψ": {
+        "prefix": "\\psi",
+        "body": "ψ"
+    },
+
+    "ω": {
+        "prefix": "\\omega",
+        "body": "ω"
+    },
+
+    "Γ": {
+        "prefix": "\\Gamma",
+        "body": "Γ"
+    },
+
+    "Δ": {
+        "prefix": "\\Delta",
+        "body": "Δ"
+    },
+
+    "Θ": {
+        "prefix": "\\Theta",
+        "body": "Θ"
+    },
+
+    "Λ": {
+        "prefix": "\\Lambda",
+        "body": "Λ"
+    },
+
+    "Ξ": {
+        "prefix": "\\Xi",
+        "body": "Ξ"
+    },
+
+    "Π": {
+        "prefix": "\\Pi",
+        "body": "Π"
+    },
+
+    "Σ": {
+        "prefix": "\\Sigma",
+        "body": "Σ"
+    },
+
+    "Υ": {
+        "prefix": "\\Upsilon",
+        "body": "Υ"
+    },
+
+    "Φ": {
+        "prefix": "\\Phi",
+        "body": "Φ"
+    },
+
+    "Ψ": {
+        "prefix": "\\Psi",
+        "body": "Ψ"
+    },
+
+    "Ω": {
+        "prefix": "\\Omega",
+        "body": "Ω"
+    }
+}

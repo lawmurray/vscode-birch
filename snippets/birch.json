@@ -1,0 +1,144 @@
+{
+    "for": {
+        "prefix": "for ",
+        "body": [
+            "for ${1:identifier} in ${2:1}..${3:last} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "while": {
+        "prefix": "while ",
+        "body": [
+            "while ${1:condition} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "do": {
+        "prefix": "do ",
+        "body": [
+            "do {",
+            "\t${0://}",
+            "} while ${1:condition};"
+        ]
+    },
+
+    "if": {
+        "prefix": "if ",
+        "body": [
+            "if ${1:condition} {",
+            "\t${0://}",
+            "}"
+        ],
+    },
+
+    "else": {
+        "prefix": "else ",
+        "body": [
+            "else {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "else if": {
+        "prefix": "else if ",
+        "body": [
+            "else if ${1:condition} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "let": {
+        "prefix": "let ",
+        "body": "let ${1:identifier} <- ${2:value};"
+    },
+
+    "class": {
+        "prefix": "class ",
+        "body": [
+            "class ${1:Identifier} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "function": {
+        "prefix": "function ",
+        "body": [
+            "function ${1:identifier}(${2}) {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "function with a return type": {
+        "prefix": "function ",
+        "body": [
+            "function ${1:identifier}(${2}) -> ${3:Type} {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "class ... < Model": {
+        "prefix": "class ",
+        "body": [
+            "class ${1:$TM_FILENAME_BASE} < Model {",
+            "\tfunction size() -> Integer {",
+            "\t\treturn 0;",
+            "\t}",
+            "",
+            "\tfunction simulate() {",
+            "\t\t${0://}",
+            "\t}",
+            "",
+            "\tfunction simulate(t:Integer) {",
+            "\t\t//",
+            "\t}",
+            "}"
+        ]
+    },
+
+    "stdout.print(\"...\")": {
+        "prefix": ["print", "stdout.print"],
+        "body": "stdout.print(\"$1\");"
+    },
+
+    "stderr.print(\"...\")": {
+        "prefix": ["print", "stderr.print"],
+        "body": "stderr.print(\"$1\");"
+    },
+
+    "function write(buffer:Buffer)": {
+        "prefix": ["write", "function write"],
+        "body": [
+            "function write(buffer:Buffer) {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "function read(buffer:Buffer)": {
+        "prefix": ["read", "function read"],
+        "body": [
+            "function read(buffer:Buffer) {",
+            "\t${0://}",
+            "}"
+        ]
+    },
+
+    "buffer.set(...)": {
+        "prefix": ["set", "buffer.set"],
+        "body": "buffer.set(\"${1:identifier}\", ${2:$1});"
+    },
+
+    "buffer.get(...)": {
+        "prefix": ["get", "buffer.get"],
+        "body": "buffer.get(\"${1:identifier}\", ${2:$1});"
+    }
+}
