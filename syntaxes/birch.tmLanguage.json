@@ -72,7 +72,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.birch",
-				"match": "\\b(function|program|class|type|operator|let|if|else|for|in|while|do|with|assert|return|factor)\\b"
+				"match": "\\b(function|program|class|struct|type|operator|let|if|else|for|in|while|do|with|assert|return|factor)\\b"
 			}]
 		},
 		"modifiers": {
