@@ -90,7 +90,7 @@
 		"constants": {
 			"patterns": [{
 				"name": "constant.language.birch",
-				"match": "\\b(nil|true|false|_)\\b"
+				"match": "\\b(nil|true|false|inf|nan|_)\\b"
 			}]
 		},
 		"operators": {
